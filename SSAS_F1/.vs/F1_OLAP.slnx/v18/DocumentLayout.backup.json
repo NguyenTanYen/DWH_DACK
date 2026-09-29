@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\1. DWH\\DACK\\SSAS_F1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{539DB173-6947-94F8-3993-5BBD0D1D4C99}|F1_OLAP\\F1_OLAP.dwproj|D:\\1. DWH\\DACK\\SSAS_F1\\F1_OLAP\\F1 DWH.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{539DB173-6947-94F8-3993-5BBD0D1D4C99}|F1_OLAP\\F1_OLAP.dwproj|solutionrelative:F1_OLAP\\F1 DWH.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "F1 DWH.cube [Design]",
+              "DocumentMoniker": "D:\\1. DWH\\DACK\\SSAS_F1\\F1_OLAP\\F1 DWH.cube",
+              "RelativeDocumentMoniker": "F1_OLAP\\F1 DWH.cube",
+              "ToolTip": "D:\\1. DWH\\DACK\\SSAS_F1\\F1_OLAP\\F1 DWH.cube [Design]",
+              "RelativeToolTip": "F1_OLAP\\F1 DWH.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-09-28T03:14:15.151Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

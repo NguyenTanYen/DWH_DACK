@@ -1,0 +1,140 @@
+StatusKey,StatusID,StatusDesc,StatusGroup,IsClassifiedFinish
+1,1,Finished,Finished,1
+2,2,Disqualified,Disqualified,0
+3,3,Accident,Accident / Collision,0
+4,4,Collision,Accident / Collision,0
+5,5,Engine,Mechanical / Technical,0
+6,6,Gearbox,Mechanical / Technical,0
+7,7,Transmission,Mechanical / Technical,0
+8,8,Clutch,Mechanical / Technical,0
+9,9,Hydraulics,Mechanical / Technical,0
+10,10,Electrical,Mechanical / Technical,0
+11,11,+1 Lap,Finished (lapped),1
+12,12,+2 Laps,Finished (lapped),1
+13,13,+3 Laps,Finished (lapped),1
+14,14,+4 Laps,Finished (lapped),1
+15,15,+5 Laps,Finished (lapped),1
+16,16,+6 Laps,Finished (lapped),1
+17,17,+7 Laps,Finished (lapped),1
+18,18,+8 Laps,Finished (lapped),1
+19,19,+9 Laps,Finished (lapped),1
+20,20,Spun off,Accident / Collision,0
+21,21,Radiator,Mechanical / Technical,0
+22,22,Suspension,Mechanical / Technical,0
+23,23,Brakes,Mechanical / Technical,0
+24,24,Differential,Mechanical / Technical,0
+25,25,Overheating,Mechanical / Technical,0
+26,26,Mechanical,Mechanical / Technical,0
+27,27,Tyre,Mechanical / Technical,0
+28,28,Driver Seat,Mechanical / Technical,0
+29,29,Puncture,Mechanical / Technical,0
+30,30,Driveshaft,Mechanical / Technical,0
+31,31,Retired,Other,0
+32,32,Fuel pressure,Mechanical / Technical,0
+33,33,Front wing,Mechanical / Technical,0
+34,34,Water pressure,Mechanical / Technical,0
+35,35,Refuelling,Mechanical / Technical,0
+36,36,Wheel,Mechanical / Technical,0
+37,37,Throttle,Mechanical / Technical,0
+38,38,Steering,Mechanical / Technical,0
+39,39,Technical,Mechanical / Technical,0
+40,40,Electronics,Mechanical / Technical,0
+41,41,Broken wing,Mechanical / Technical,0
+42,42,Heat shield fire,Mechanical / Technical,0
+43,43,Exhaust,Mechanical / Technical,0
+44,44,Oil leak,Mechanical / Technical,0
+45,45,+11 Laps,Finished (lapped),1
+46,46,Wheel rim,Mechanical / Technical,0
+47,47,Water leak,Mechanical / Technical,0
+48,48,Fuel pump,Mechanical / Technical,0
+49,49,Track rod,Mechanical / Technical,0
+50,50,+17 Laps,Finished (lapped),1
+51,51,Oil pressure,Mechanical / Technical,0
+52,128,+42 Laps,Finished (lapped),1
+53,53,+13 Laps,Finished (lapped),1
+54,54,Withdrew,Did not start / Not classified,0
+55,55,+12 Laps,Finished (lapped),1
+56,56,Engine fire,Mechanical / Technical,0
+57,129,Engine misfire,Accident / Collision,0
+58,58,+26 Laps,Finished (lapped),1
+59,59,Tyre puncture,Mechanical / Technical,0
+60,60,Out of fuel,Mechanical / Technical,0
+61,61,Wheel nut,Mechanical / Technical,0
+62,62,Not classified,Did not start / Not classified,0
+63,63,Pneumatics,Mechanical / Technical,0
+64,64,Handling,Mechanical / Technical,0
+65,65,Rear wing,Mechanical / Technical,0
+66,66,Fire,Accident / Collision,0
+67,67,Wheel bearing,Mechanical / Technical,0
+68,68,Physical,Driver health,0
+69,69,Fuel system,Mechanical / Technical,0
+70,70,Oil line,Mechanical / Technical,0
+71,71,Fuel rig,Mechanical / Technical,0
+72,72,Launch control,Mechanical / Technical,0
+73,73,Injured,Driver health,0
+74,74,Fuel,Mechanical / Technical,0
+75,75,Power loss,Mechanical / Technical,0
+76,76,Vibrations,Mechanical / Technical,0
+77,77,107% Rule,Did not start / Not classified,0
+78,78,Safety,Other,0
+79,79,Drivetrain,Mechanical / Technical,0
+80,80,Ignition,Mechanical / Technical,0
+81,81,Did not qualify,Did not start / Not classified,0
+82,82,Injury,Driver health,0
+83,83,Chassis,Mechanical / Technical,0
+84,84,Battery,Mechanical / Technical,0
+85,85,Stalled,Mechanical / Technical,0
+86,86,Halfshaft,Mechanical / Technical,0
+87,87,Crankshaft,Mechanical / Technical,0
+88,88,+10 Laps,Finished (lapped),1
+89,89,Safety concerns,Other,0
+90,90,Not restarted,Did not start / Not classified,0
+91,91,Alternator,Mechanical / Technical,0
+92,92,Underweight,Disqualified,0
+93,93,Safety belt,Mechanical / Technical,0
+94,94,Oil pump,Mechanical / Technical,0
+95,95,Fuel leak,Mechanical / Technical,0
+96,96,Excluded,Disqualified,0
+97,97,Did not prequalify,Did not start / Not classified,0
+98,98,Injection,Mechanical / Technical,0
+99,99,Distributor,Mechanical / Technical,0
+100,100,Driver unwell,Driver health,0
+101,101,Turbo,Mechanical / Technical,0
+102,102,CV joint,Mechanical / Technical,0
+103,103,Water pump,Mechanical / Technical,0
+104,104,Fatal accident,Accident / Collision,0
+105,105,Spark plugs,Mechanical / Technical,0
+106,106,Fuel pipe,Mechanical / Technical,0
+107,107,Eye injury,Driver health,0
+108,108,Oil pipe,Mechanical / Technical,0
+109,109,Axle,Mechanical / Technical,0
+110,110,Water pipe,Mechanical / Technical,0
+111,111,+14 Laps,Finished (lapped),1
+112,112,+15 Laps,Finished (lapped),1
+113,113,+25 Laps,Finished (lapped),1
+114,114,+18 Laps,Finished (lapped),1
+115,115,+22 Laps,Finished (lapped),1
+116,116,+16 Laps,Finished (lapped),1
+117,117,+24 Laps,Finished (lapped),1
+118,118,+29 Laps,Finished (lapped),1
+119,119,+23 Laps,Finished (lapped),1
+120,120,+21 Laps,Finished (lapped),1
+121,121,Magneto,Mechanical / Technical,0
+122,122,+44 Laps,Finished (lapped),1
+123,123,+30 Laps,Finished (lapped),1
+124,124,+19 Laps,Finished (lapped),1
+125,125,+46 Laps,Finished (lapped),1
+126,126,Supercharger,Mechanical / Technical,0
+127,127,+20 Laps,Finished (lapped),1
+128,130,Collision damage,Accident / Collision,0
+129,131,Power Unit,Mechanical / Technical,0
+130,132,ERS,Mechanical / Technical,0
+131,133,+49 Laps,Finished (lapped),1
+132,134,+38 Laps,Finished (lapped),1
+133,135,Brake duct,Mechanical / Technical,0
+134,136,Seat,Mechanical / Technical,0
+135,137,Damage,Accident / Collision,0
+136,138,Debris,Accident / Collision,0
+137,139,Illness,Driver health,0
+138,140,Undertray,Mechanical / Technical,0
+139,141,Cooling system,Mechanical / Technical,0

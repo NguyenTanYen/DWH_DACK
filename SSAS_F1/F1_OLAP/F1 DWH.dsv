@@ -1,0 +1,393 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="87cc86a5-27b7-46e0-9d2e-f47d938cc0b4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>F1 DWH</ID>
+  <Name>F1 DWH</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>F1 DWH</DataSourceID>
+  <Schema>
+    <xs:schema id="F1_x0020_DWH" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="F1_x0020_DWH" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="ca6eddaa-a9c2-42b8-a8dd-89cf7a95e416">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_DimDate" msprop:DbTableName="DimDate" msprop:FriendlyName="DimDate" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="1904ac0d-d745-41ca-987b-2ba145489205">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DateKey" msprop:FriendlyName="DateKey" msprop:DbColumnName="DateKey" msprop:design-time-name="03c460c8-7cd1-4455-acd4-34b5c3985c49" type="xs:int" />
+                  <xs:element name="FullDate" msprop:FriendlyName="FullDate" msprop:DbColumnName="FullDate" msprop:design-time-name="ab305582-0eda-47ce-b4fd-f2bf185f53b9" type="xs:dateTime" />
+                  <xs:element name="Day" msprop:FriendlyName="Day" msprop:DbColumnName="Day" msprop:design-time-name="ab6eeeb2-113a-4d24-9490-f7ec62853e46" type="xs:unsignedByte" />
+                  <xs:element name="Month" msprop:FriendlyName="Month" msprop:DbColumnName="Month" msprop:design-time-name="3ed6d7d8-976c-4ced-af6a-430bbe9b790f" type="xs:unsignedByte" />
+                  <xs:element name="Quarter" msprop:FriendlyName="Quarter" msprop:DbColumnName="Quarter" msprop:design-time-name="747820bc-dc2a-4d03-aa71-ebc56294625d" type="xs:unsignedByte" />
+                  <xs:element name="Year" msprop:FriendlyName="Year" msprop:DbColumnName="Year" msprop:design-time-name="5f36db70-1ac1-4ca6-bb53-4612991b0bb5" type="xs:short" />
+                  <xs:element name="Decade" msprop:FriendlyName="Decade" msprop:DbColumnName="Decade" msprop:design-time-name="f7f36bda-da8c-4b36-8251-22d04e050e75">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimRace" msprop:DbTableName="DimRace" msprop:FriendlyName="DimRace" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="0b1f2e20-4cf5-4ca5-85e1-4c6c96cacf01">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="RaceKey" msprop:FriendlyName="RaceKey" msprop:DbColumnName="RaceKey" msprop:design-time-name="03f201af-3761-45b1-a539-eb18d23656e4" type="xs:int" />
+                  <xs:element name="RaceID" msprop:FriendlyName="RaceID" msprop:DbColumnName="RaceID" msprop:design-time-name="5bee44e4-51b3-4859-b504-632ee5706dc0" type="xs:int" />
+                  <xs:element name="RaceName" msprop:FriendlyName="RaceName" msprop:DbColumnName="RaceName" msprop:design-time-name="3f67fd06-3ddd-465f-829f-dd0980dcd0c5">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Season" msprop:FriendlyName="Season" msprop:DbColumnName="Season" msprop:design-time-name="48984b3a-7e3c-4518-be2f-97308ccb5670" type="xs:short" />
+                  <xs:element name="Round" msprop:FriendlyName="Round" msprop:DbColumnName="Round" msprop:design-time-name="0c1d6ff1-f061-48d9-9d13-bd336ec48ee6" type="xs:unsignedByte" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimCircuit" msprop:DbTableName="DimCircuit" msprop:FriendlyName="DimCircuit" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="24ae10d2-52e8-45f7-93d1-7b943c3da40f">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CircuitKey" msprop:FriendlyName="CircuitKey" msprop:DbColumnName="CircuitKey" msprop:design-time-name="c8b3b04f-c8ec-413f-89d7-d3afa19cdf27" type="xs:int" />
+                  <xs:element name="CircuitID" msprop:FriendlyName="CircuitID" msprop:DbColumnName="CircuitID" msprop:design-time-name="3890e3f1-275d-4bc2-bdeb-46e25ac655ee" type="xs:int" />
+                  <xs:element name="CircuitName" msprop:FriendlyName="CircuitName" msprop:DbColumnName="CircuitName" msprop:design-time-name="c68eaeab-72fa-449d-83ab-fc3bec3ba2bf">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="City" msprop:FriendlyName="City" msprop:DbColumnName="City" msprop:design-time-name="c2942994-adc0-4136-a772-43d7d3e0e1d0" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Country" msprop:FriendlyName="Country" msprop:DbColumnName="Country" msprop:design-time-name="db2590bf-9b0f-41e3-9b75-ac7b692df285" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimDriver" msprop:DbTableName="DimDriver" msprop:FriendlyName="DimDriver" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="3216f588-f05d-4094-a0e8-42294fb9f4df">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DriverKey" msprop:FriendlyName="DriverKey" msprop:DbColumnName="DriverKey" msprop:design-time-name="3b44be6b-f2a5-43b8-b338-448858b9b019" type="xs:int" />
+                  <xs:element name="DriverID" msprop:FriendlyName="DriverID" msprop:DbColumnName="DriverID" msprop:design-time-name="385d5b4a-1d65-4cd2-83f3-a599d87ee576" type="xs:int" />
+                  <xs:element name="DriverCode" msprop:FriendlyName="DriverCode" msprop:DbColumnName="DriverCode" msprop:design-time-name="b7c99d20-dd12-4e5d-8164-7ab394b2451b" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FullName" msprop:FriendlyName="FullName" msprop:DbColumnName="FullName" msprop:design-time-name="4b352057-a797-4645-9953-ce8bedd5e9e3">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="101" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DateOfBirth" msprop:FriendlyName="DateOfBirth" msprop:DbColumnName="DateOfBirth" msprop:design-time-name="c270e856-eea6-4820-b778-8df0efb39565" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Nationality" msprop:FriendlyName="Nationality" msprop:DbColumnName="Nationality" msprop:design-time-name="12e2821b-f74b-45d0-b4a3-3c44507eed12" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimConstructor" msprop:DbTableName="DimConstructor" msprop:FriendlyName="DimConstructor" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="54c3c46f-4258-407f-a0e5-a4fb87fded76">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ConstructorKey" msprop:FriendlyName="ConstructorKey" msprop:DbColumnName="ConstructorKey" msprop:design-time-name="031a56c9-5d88-4f2e-abd2-b1061ba24d0d" type="xs:int" />
+                  <xs:element name="ConstructorID" msprop:FriendlyName="ConstructorID" msprop:DbColumnName="ConstructorID" msprop:design-time-name="92263700-4a3f-4fb6-bd1e-c9ec78164e99" type="xs:int" />
+                  <xs:element name="ConstructorName" msprop:FriendlyName="ConstructorName" msprop:DbColumnName="ConstructorName" msprop:design-time-name="003c6ab6-2dbf-4639-b15b-c2a4155a299d">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Nationality" msprop:FriendlyName="Nationality" msprop:DbColumnName="Nationality" msprop:design-time-name="1015b00b-f478-469a-ac48-b8e43c8231af" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimStatus" msprop:DbTableName="DimStatus" msprop:FriendlyName="DimStatus" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="11df3aa3-a7ca-437f-941d-2d0ff2481e06">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="StatusKey" msprop:FriendlyName="StatusKey" msprop:DbColumnName="StatusKey" msprop:design-time-name="4f5cfeff-26aa-4318-b799-48200d77c7aa" type="xs:int" />
+                  <xs:element name="StatusID" msprop:FriendlyName="StatusID" msprop:DbColumnName="StatusID" msprop:design-time-name="80a1a72a-f22d-42ef-b4a8-fe39aee48830" type="xs:int" />
+                  <xs:element name="StatusName" msprop:FriendlyName="StatusName" msprop:DbColumnName="StatusName" msprop:design-time-name="0238dc00-bb45-406d-a2bd-cda077846089">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="StatusGroup" msprop:FriendlyName="StatusGroup" msprop:DbColumnName="StatusGroup" msprop:design-time-name="d8e9dec5-2c67-4514-89c4-72e2e6e05371">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FactRaceResult" msprop:DbTableName="FactRaceResult" msprop:FriendlyName="FactRaceResult" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="fac89613-1943-48a4-b491-003390eacc69">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ResultID" msprop:FriendlyName="ResultID" msprop:DbColumnName="ResultID" msprop:design-time-name="f28f393d-50cb-4f6d-8df9-fdeb5c9738d1" type="xs:int" />
+                  <xs:element name="DateKey" msprop:FriendlyName="DateKey" msprop:DbColumnName="DateKey" msprop:design-time-name="f9dae4f7-3487-4e6f-9bdb-77297e7951ff" type="xs:int" />
+                  <xs:element name="RaceKey" msprop:FriendlyName="RaceKey" msprop:DbColumnName="RaceKey" msprop:design-time-name="50ad060f-28d3-417b-b5de-9e47b45b6fd3" type="xs:int" />
+                  <xs:element name="CircuitKey" msprop:FriendlyName="CircuitKey" msprop:DbColumnName="CircuitKey" msprop:design-time-name="8d3e53b3-8a19-429a-8663-73622cdfbb12" type="xs:int" />
+                  <xs:element name="DriverKey" msprop:FriendlyName="DriverKey" msprop:DbColumnName="DriverKey" msprop:design-time-name="cb5a4fcc-db62-4042-85bd-bbd926dd088d" type="xs:int" />
+                  <xs:element name="ConstructorKey" msprop:FriendlyName="ConstructorKey" msprop:DbColumnName="ConstructorKey" msprop:design-time-name="1cc9f565-3048-4edf-80c0-610d482d811d" type="xs:int" />
+                  <xs:element name="StatusKey" msprop:FriendlyName="StatusKey" msprop:DbColumnName="StatusKey" msprop:design-time-name="bcca4595-a315-4465-9000-b93c29c1ceb7" type="xs:int" />
+                  <xs:element name="GridPosition" msprop:FriendlyName="GridPosition" msprop:DbColumnName="GridPosition" msprop:design-time-name="b02b6b6c-3016-4d2d-b07f-4badf1fd2176" type="xs:int" minOccurs="0" />
+                  <xs:element name="FinishPosition" msprop:FriendlyName="FinishPosition" msprop:DbColumnName="FinishPosition" msprop:design-time-name="fd239b16-39cc-4d74-bcde-de3f1b380e5e" type="xs:int" minOccurs="0" />
+                  <xs:element name="Points" msprop:FriendlyName="Points" msprop:DbColumnName="Points" msprop:design-time-name="b10bb87b-e0fe-45a7-a706-d95c35f37efc" type="xs:decimal" />
+                  <xs:element name="LapsCompleted" msprop:FriendlyName="LapsCompleted" msprop:DbColumnName="LapsCompleted" msprop:design-time-name="33619aa2-df11-4211-863c-edd594f4397a" type="xs:int" />
+                  <xs:element name="RaceTimeMs" msprop:FriendlyName="RaceTimeMs" msprop:DbColumnName="RaceTimeMs" msprop:design-time-name="8e6d981e-e431-4eb4-84d6-774938bbba96" type="xs:long" minOccurs="0" />
+                  <xs:element name="FastestLapTimeMs" msprop:FriendlyName="FastestLapTimeMs" msprop:DbColumnName="FastestLapTimeMs" msprop:design-time-name="be3d6647-baac-45c4-9888-5d4db6624e22" type="xs:int" minOccurs="0" />
+                  <xs:element name="IsWin" msprop:FriendlyName="IsWin" msprop:DbColumnName="IsWin" msprop:design-time-name="43adc482-39f7-4e61-9029-87d615f2fba9" type="xs:unsignedByte" />
+                  <xs:element name="IsPodium" msprop:FriendlyName="IsPodium" msprop:DbColumnName="IsPodium" msprop:design-time-name="f9cacb57-e597-41ff-ab04-a1e1fafa7096" type="xs:unsignedByte" />
+                  <xs:element name="IsFinished" msprop:FriendlyName="IsFinished" msprop:DbColumnName="IsFinished" msprop:design-time-name="9f3eaa54-dc6f-47d5-a75e-404e8bb3e84c" type="xs:unsignedByte" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FactQualifying" msprop:DbTableName="FactQualifying" msprop:FriendlyName="FactQualifying" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="2734cc8f-d162-4c71-8f1d-ae7921df6474">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="QualifyID" msprop:FriendlyName="QualifyID" msprop:DbColumnName="QualifyID" msprop:design-time-name="97fbca4a-2f86-4bd6-8349-7965c970dce8" type="xs:int" />
+                  <xs:element name="DateKey" msprop:FriendlyName="DateKey" msprop:DbColumnName="DateKey" msprop:design-time-name="0ef2f46a-5b29-4113-9771-5a64619b33fb" type="xs:int" />
+                  <xs:element name="RaceKey" msprop:FriendlyName="RaceKey" msprop:DbColumnName="RaceKey" msprop:design-time-name="059b3b48-d957-4af6-b274-b7182db936a9" type="xs:int" />
+                  <xs:element name="CircuitKey" msprop:FriendlyName="CircuitKey" msprop:DbColumnName="CircuitKey" msprop:design-time-name="424df416-9d5a-4430-b361-9c94ee294d47" type="xs:int" />
+                  <xs:element name="DriverKey" msprop:FriendlyName="DriverKey" msprop:DbColumnName="DriverKey" msprop:design-time-name="32439874-2322-4d61-9314-df5323dd79bd" type="xs:int" />
+                  <xs:element name="ConstructorKey" msprop:FriendlyName="ConstructorKey" msprop:DbColumnName="ConstructorKey" msprop:design-time-name="665aa9f6-49b7-436c-8357-67b9e911126d" type="xs:int" />
+                  <xs:element name="QualiPosition" msprop:FriendlyName="QualiPosition" msprop:DbColumnName="QualiPosition" msprop:design-time-name="bb6f4180-b9a2-4a4f-a042-5bbec8382619" type="xs:int" />
+                  <xs:element name="Q1Ms" msprop:FriendlyName="Q1Ms" msprop:DbColumnName="Q1Ms" msprop:design-time-name="cae4ba28-f09e-45c8-985e-5def8b255461" type="xs:int" minOccurs="0" />
+                  <xs:element name="Q2Ms" msprop:FriendlyName="Q2Ms" msprop:DbColumnName="Q2Ms" msprop:design-time-name="f26abd15-73c8-4f35-a49a-5cf26a5140aa" type="xs:int" minOccurs="0" />
+                  <xs:element name="Q3Ms" msprop:FriendlyName="Q3Ms" msprop:DbColumnName="Q3Ms" msprop:design-time-name="34abfa4a-8636-4c9a-a15e-12c3cb4d769e" type="xs:int" minOccurs="0" />
+                  <xs:element name="BestLapMs" msprop:FriendlyName="BestLapMs" msprop:DbColumnName="BestLapMs" msprop:design-time-name="6867dcb5-912f-4dcc-9116-c18930b4fc8e" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FactLapTime" msprop:DbTableName="FactLapTime" msprop:FriendlyName="FactLapTime" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="9ac46bd9-aa30-44d7-878d-df088d85a41b">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DateKey" msprop:FriendlyName="DateKey" msprop:DbColumnName="DateKey" msprop:design-time-name="47b13d42-3534-4143-8011-5f1d6e1f9839" type="xs:int" />
+                  <xs:element name="RaceKey" msprop:FriendlyName="RaceKey" msprop:DbColumnName="RaceKey" msprop:design-time-name="314cdac1-e892-4828-927b-38b7864c13d8" type="xs:int" />
+                  <xs:element name="CircuitKey" msprop:FriendlyName="CircuitKey" msprop:DbColumnName="CircuitKey" msprop:design-time-name="d6499786-810a-4348-980a-54faa5851397" type="xs:int" />
+                  <xs:element name="DriverKey" msprop:FriendlyName="DriverKey" msprop:DbColumnName="DriverKey" msprop:design-time-name="0937bdca-ddf7-4fb5-bf6d-4e1eb804e0ee" type="xs:int" />
+                  <xs:element name="LapNumber" msprop:FriendlyName="LapNumber" msprop:DbColumnName="LapNumber" msprop:design-time-name="2217186d-40ce-40b8-8e14-1ead58273693" type="xs:int" />
+                  <xs:element name="PositionOnLap" msprop:FriendlyName="PositionOnLap" msprop:DbColumnName="PositionOnLap" msprop:design-time-name="8ceaec7e-61ea-4652-a416-b25574e83b51" type="xs:int" minOccurs="0" />
+                  <xs:element name="LapTimeMs" msprop:FriendlyName="LapTimeMs" msprop:DbColumnName="LapTimeMs" msprop:design-time-name="28f79f36-e950-46f8-b663-066ba97ecf1b" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FactPitStop" msprop:DbTableName="FactPitStop" msprop:FriendlyName="FactPitStop" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="57b17422-f8eb-4238-9eb4-c0c44ae40543">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DateKey" msprop:FriendlyName="DateKey" msprop:DbColumnName="DateKey" msprop:design-time-name="b9e53428-b6df-41ca-b842-d22eeb2035f1" type="xs:int" />
+                  <xs:element name="RaceKey" msprop:FriendlyName="RaceKey" msprop:DbColumnName="RaceKey" msprop:design-time-name="44371f82-74a0-4d5f-b029-b002d77e7d09" type="xs:int" />
+                  <xs:element name="CircuitKey" msprop:FriendlyName="CircuitKey" msprop:DbColumnName="CircuitKey" msprop:design-time-name="e7c137cc-26ce-42be-a47a-1ddc2d6597e0" type="xs:int" />
+                  <xs:element name="DriverKey" msprop:FriendlyName="DriverKey" msprop:DbColumnName="DriverKey" msprop:design-time-name="4752c80a-4b3a-409a-a299-f0648805ea36" type="xs:int" />
+                  <xs:element name="ConstructorKey" msprop:FriendlyName="ConstructorKey" msprop:DbColumnName="ConstructorKey" msprop:design-time-name="11ab6d2d-c0e1-49ce-8c7f-41b678f45737" type="xs:int" />
+                  <xs:element name="StopNumber" msprop:FriendlyName="StopNumber" msprop:DbColumnName="StopNumber" msprop:design-time-name="328e90db-05dd-47fa-9ec4-91e28b9a851f" type="xs:int" />
+                  <xs:element name="LapNumber" msprop:FriendlyName="LapNumber" msprop:DbColumnName="LapNumber" msprop:design-time-name="c94adb2f-1e90-41b4-a4f5-af83130df56f" type="xs:int" />
+                  <xs:element name="DurationMs" msprop:FriendlyName="DurationMs" msprop:DbColumnName="DurationMs" msprop:design-time-name="94059064-c57e-4ba2-b581-225bb0868489" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FactDriverStanding" msprop:DbTableName="FactDriverStanding" msprop:FriendlyName="FactDriverStanding" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="16a42623-c630-43c8-bb5d-385a4cfe1f16">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DateKey" msprop:FriendlyName="DateKey" msprop:DbColumnName="DateKey" msprop:design-time-name="5643aeae-c664-4a29-ad4a-38b71ace4b91" type="xs:int" />
+                  <xs:element name="RaceKey" msprop:FriendlyName="RaceKey" msprop:DbColumnName="RaceKey" msprop:design-time-name="41619700-bb3d-45d1-8ccf-762da4a030f4" type="xs:int" />
+                  <xs:element name="DriverKey" msprop:FriendlyName="DriverKey" msprop:DbColumnName="DriverKey" msprop:design-time-name="fecfb2af-d3cc-498f-97bd-11a882274cd1" type="xs:int" />
+                  <xs:element name="StandingPosition" msprop:FriendlyName="StandingPosition" msprop:DbColumnName="StandingPosition" msprop:design-time-name="eace90c0-4020-47aa-bb98-0c0a16c8aa13" type="xs:int" />
+                  <xs:element name="TotalPoints" msprop:FriendlyName="TotalPoints" msprop:DbColumnName="TotalPoints" msprop:design-time-name="8410940d-a93d-469c-ad60-ba130f1fa778" type="xs:decimal" />
+                  <xs:element name="TotalWins" msprop:FriendlyName="TotalWins" msprop:DbColumnName="TotalWins" msprop:design-time-name="d5f3f505-f3e9-4dfe-b421-319fc0236b43" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="dbo_DimDate_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimDate" />
+          <xs:field xpath="DateKey" />
+        </xs:unique>
+        <xs:unique name="dbo_DimRace_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimRace" />
+          <xs:field xpath="RaceKey" />
+        </xs:unique>
+        <xs:unique name="dbo_DimCircuit_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimCircuit" />
+          <xs:field xpath="CircuitKey" />
+        </xs:unique>
+        <xs:unique name="dbo_DimDriver_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimDriver" />
+          <xs:field xpath="DriverKey" />
+        </xs:unique>
+        <xs:unique name="dbo_DimConstructor_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimConstructor" />
+          <xs:field xpath="ConstructorKey" />
+        </xs:unique>
+        <xs:unique name="dbo_DimStatus_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimStatus" />
+          <xs:field xpath="StatusKey" />
+        </xs:unique>
+        <xs:unique name="dbo_FactRaceResult_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactRaceResult" />
+          <xs:field xpath="ResultID" />
+        </xs:unique>
+        <xs:unique name="dbo_FactQualifying_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactQualifying" />
+          <xs:field xpath="QualifyID" />
+        </xs:unique>
+        <xs:unique name="dbo_FactLapTime_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactLapTime" />
+          <xs:field xpath="RaceKey" />
+          <xs:field xpath="DriverKey" />
+          <xs:field xpath="LapNumber" />
+        </xs:unique>
+        <xs:unique name="dbo_FactPitStop_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactPitStop" />
+          <xs:field xpath="RaceKey" />
+          <xs:field xpath="DriverKey" />
+          <xs:field xpath="StopNumber" />
+        </xs:unique>
+        <xs:unique name="dbo_FactDriverStanding_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactDriverStanding" />
+          <xs:field xpath="RaceKey" />
+          <xs:field xpath="DriverKey" />
+        </xs:unique>
+        <xs:keyref name="FK_FactRaceResult_DimDate" refer="dbo_DimDate_Constraint1">
+          <xs:selector xpath=".//dbo_FactRaceResult" />
+          <xs:field xpath="DateKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactRaceResult_DimRace" refer="dbo_DimRace_Constraint1">
+          <xs:selector xpath=".//dbo_FactRaceResult" />
+          <xs:field xpath="RaceKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactRaceResult_DimCircuit" refer="dbo_DimCircuit_Constraint1">
+          <xs:selector xpath=".//dbo_FactRaceResult" />
+          <xs:field xpath="CircuitKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactRaceResult_DimDriver" refer="dbo_DimDriver_Constraint1">
+          <xs:selector xpath=".//dbo_FactRaceResult" />
+          <xs:field xpath="DriverKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactRaceResult_DimConstructor" refer="dbo_DimConstructor_Constraint1">
+          <xs:selector xpath=".//dbo_FactRaceResult" />
+          <xs:field xpath="ConstructorKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactRaceResult_DimStatus" refer="dbo_DimStatus_Constraint1">
+          <xs:selector xpath=".//dbo_FactRaceResult" />
+          <xs:field xpath="StatusKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactQualifying_DimDate" refer="dbo_DimDate_Constraint1">
+          <xs:selector xpath=".//dbo_FactQualifying" />
+          <xs:field xpath="DateKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactQualifying_DimRace" refer="dbo_DimRace_Constraint1">
+          <xs:selector xpath=".//dbo_FactQualifying" />
+          <xs:field xpath="RaceKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactQualifying_DimCircuit" refer="dbo_DimCircuit_Constraint1">
+          <xs:selector xpath=".//dbo_FactQualifying" />
+          <xs:field xpath="CircuitKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactQualifying_DimDriver" refer="dbo_DimDriver_Constraint1">
+          <xs:selector xpath=".//dbo_FactQualifying" />
+          <xs:field xpath="DriverKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactQualifying_DimConstructor" refer="dbo_DimConstructor_Constraint1">
+          <xs:selector xpath=".//dbo_FactQualifying" />
+          <xs:field xpath="ConstructorKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactLapTime_DimDate" refer="dbo_DimDate_Constraint1">
+          <xs:selector xpath=".//dbo_FactLapTime" />
+          <xs:field xpath="DateKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactLapTime_DimRace" refer="dbo_DimRace_Constraint1">
+          <xs:selector xpath=".//dbo_FactLapTime" />
+          <xs:field xpath="RaceKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactLapTime_DimCircuit" refer="dbo_DimCircuit_Constraint1">
+          <xs:selector xpath=".//dbo_FactLapTime" />
+          <xs:field xpath="CircuitKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactLapTime_DimDriver" refer="dbo_DimDriver_Constraint1">
+          <xs:selector xpath=".//dbo_FactLapTime" />
+          <xs:field xpath="DriverKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactPitStop_DimDate" refer="dbo_DimDate_Constraint1">
+          <xs:selector xpath=".//dbo_FactPitStop" />
+          <xs:field xpath="DateKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactPitStop_DimRace" refer="dbo_DimRace_Constraint1">
+          <xs:selector xpath=".//dbo_FactPitStop" />
+          <xs:field xpath="RaceKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactPitStop_DimCircuit" refer="dbo_DimCircuit_Constraint1">
+          <xs:selector xpath=".//dbo_FactPitStop" />
+          <xs:field xpath="CircuitKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactPitStop_DimDriver" refer="dbo_DimDriver_Constraint1">
+          <xs:selector xpath=".//dbo_FactPitStop" />
+          <xs:field xpath="DriverKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactPitStop_DimConstructor" refer="dbo_DimConstructor_Constraint1">
+          <xs:selector xpath=".//dbo_FactPitStop" />
+          <xs:field xpath="ConstructorKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactDriverStanding_DimDate" refer="dbo_DimDate_Constraint1">
+          <xs:selector xpath=".//dbo_FactDriverStanding" />
+          <xs:field xpath="DateKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactDriverStanding_DimRace" refer="dbo_DimRace_Constraint1">
+          <xs:selector xpath=".//dbo_FactDriverStanding" />
+          <xs:field xpath="RaceKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactDriverStanding_DimDriver" refer="dbo_DimDriver_Constraint1">
+          <xs:selector xpath=".//dbo_FactDriverStanding" />
+          <xs:field xpath="DriverKey" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <F1_x0020_DWH xmlns="" />
+  </Schema>
+</DataSourceView>

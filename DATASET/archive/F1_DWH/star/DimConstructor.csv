@@ -1,0 +1,213 @@
+ConstructorKey,ConstructorID,ConstructorRef,ConstructorName,Nationality
+1,1,mclaren,McLaren,British
+2,2,bmw_sauber,BMW Sauber,German
+3,3,williams,Williams,British
+4,4,renault,Renault,French
+5,5,toro_rosso,Toro Rosso,Italian
+6,6,ferrari,Ferrari,Italian
+7,7,toyota,Toyota,Japanese
+8,8,super_aguri,Super Aguri,Japanese
+9,9,red_bull,Red Bull,Austrian
+10,10,force_india,Force India,Indian
+11,11,honda,Honda,Japanese
+12,12,spyker,Spyker,Dutch
+13,13,mf1,MF1,Russian
+14,14,spyker_mf1,Spyker MF1,Dutch
+15,15,sauber,Sauber,Swiss
+16,16,bar,BAR,British
+17,17,jordan,Jordan,Irish
+18,18,minardi,Minardi,Italian
+19,19,jaguar,Jaguar,British
+20,20,prost,Prost,French
+21,21,arrows,Arrows,British
+22,22,benetton,Benetton,Italian
+23,23,brawn,Brawn,British
+24,24,stewart,Stewart,British
+25,25,tyrrell,Tyrrell,British
+26,26,lola,Lola,British
+27,27,ligier,Ligier,French
+28,28,forti,Forti,Italian
+29,29,footwork,Footwork,British
+30,30,pacific,Pacific,British
+31,31,simtek,Simtek,British
+32,32,team_lotus,Team Lotus,British
+33,33,larrousse,Larrousse,French
+34,34,brabham,Brabham,British
+35,35,dallara,Dallara,Italian
+36,36,fondmetal,Fondmetal,Italian
+37,37,march,March,British
+38,38,moda,Andrea Moda,Italian
+39,39,ags,AGS,French
+40,40,lambo,Lambo,Italian
+41,41,leyton,Leyton House,British
+42,42,coloni,Coloni,Italian
+43,44,eurobrun,Euro Brun,Italian
+44,45,osella,Osella,Italian
+45,46,onyx,Onyx,British
+46,47,life,Life,Italian
+47,48,rial,Rial,German
+48,49,zakspeed,Zakspeed,German
+49,50,ram,RAM,British
+50,51,alfa,Alfa Romeo,Swiss
+51,52,spirit,Spirit,British
+52,53,toleman,Toleman,British
+53,54,ats,ATS,Italian
+54,55,theodore,Theodore,Hong Kong
+55,56,fittipaldi,Fittipaldi,Brazilian
+56,57,ensign,Ensign,British
+57,58,shadow,Shadow,British
+58,59,wolf,Wolf,Canadian
+59,60,merzario,Merzario,Italian
+60,61,kauhsen,Kauhsen,German
+61,62,rebaque,Rebaque,Mexican
+62,63,surtees,Surtees,British
+63,64,hesketh,Hesketh,British
+64,65,martini,Martini,French
+65,66,brm,BRM,British
+66,67,penske,Penske,American
+67,68,lec,LEC,British
+68,69,mcguire,McGuire,Australian
+69,70,boro,Boro,Dutch
+70,71,apollon,Apollon,Swiss
+71,72,kojima,Kojima,Japanese
+72,73,parnelli,Parnelli,American
+73,74,maki,Maki,Japanese
+74,75,hill,Embassy Hill,British
+75,76,lyncar,Lyncar,British
+76,77,trojan,Trojan,British
+77,78,amon,Amon,New Zealander
+78,79,token,Token,British
+79,80,iso_marlboro,Iso Marlboro,British
+80,81,tecno,Tecno,Italian
+81,82,matra,Matra,French
+82,83,politoys,Politoys,British
+83,84,connew,Connew,British
+84,85,bellasi,Bellasi,Swiss
+85,86,tomaso,De Tomaso,Italian
+86,87,cooper,Cooper,British
+87,88,eagle,Eagle,American
+88,89,lds,LDS,South African
+89,90,protos,Protos,British
+90,91,shannon,Shannon,British
+91,92,scirocco,Scirocco,British
+92,93,re,RE,Rhodesian
+93,94,brp,BRP,British
+94,95,porsche,Porsche,German
+95,96,derrington,Derrington,British
+96,97,gilby,Gilby,British
+97,98,stebro,Stebro,Canadian
+98,99,emeryson,Emeryson,British
+99,100,enb,ENB,Belgian
+100,101,jbw,JBW,British
+101,102,ferguson,Ferguson,British
+102,103,mbm,MBM,Swiss
+103,104,behra-porsche,Behra-Porsche,Italian
+104,105,maserati,Maserati,Italian
+105,106,scarab,Scarab,American
+106,107,watson,Watson,American
+107,108,epperly,Epperly,American
+108,109,phillips,Phillips,American
+109,110,lesovsky,Lesovsky,American
+110,111,trevis,Trevis,American
+111,112,meskowski,Meskowski,American
+112,113,kurtis_kraft,Kurtis Kraft,American
+113,114,kuzma,Kuzma,American
+114,115,vhristensen,Christensen,American
+115,116,ewing,Ewing,American
+116,117,aston_martin,Aston Martin,British
+117,118,vanwall,Vanwall,British
+118,119,moore,Moore,American
+119,120,dunn,Dunn,American
+120,121,elder,Elder,American
+121,122,sutton,Sutton,American
+122,123,fry,Fry,British
+123,124,tec-mec,Tec-Mec,Italian
+124,125,connaught,Connaught,British
+125,126,alta,Alta,British
+126,127,osca,OSCA,Italian
+127,128,gordini,Gordini,French
+128,129,stevens,Stevens,American
+129,130,bugatti,Bugatti,French
+130,131,mercedes,Mercedes,German
+131,132,lancia,Lancia,Italian
+132,133,hwm,HWM,British
+133,134,schroeder,Schroeder,American
+134,135,pawl,Pawl,American
+135,136,pankratz,Pankratz,American
+136,137,arzani-volpini,Arzani-Volpini,Italian
+137,138,nichels,Nichels,American
+138,139,bromme,Bromme,American
+139,140,klenk,Klenk,German
+140,141,simca,Simca,French
+141,142,turner,Turner,American
+142,143,del_roy,Del Roy,American
+143,144,veritas,Veritas,German
+144,145,bmw,BMW,German
+145,146,emw,EMW,East German
+146,147,afm,AFM,German
+147,148,frazer_nash,Frazer Nash,British
+148,149,sherman,Sherman,American
+149,150,deidt,Deidt,American
+150,151,era,ERA,British
+151,152,butterworth,Aston Butterworth,British
+152,153,cisitalia,Cisitalia,Italian
+153,154,lago,Talbot-Lago,French
+154,155,hall,Hall,American
+155,156,marchese,Marchese,American
+156,157,langley,Langley,American
+157,158,rae,Rae,American
+158,159,olson,Olson,American
+159,160,wetteroth,Wetteroth,American
+160,161,adams,Adams,American
+161,162,snowberger,Snowberger,American
+162,163,milano,Milano,Italian
+163,164,hrt,HRT,Spanish
+164,167,cooper-maserati,Cooper-Maserati,British
+165,166,virgin,Virgin,British
+166,168,cooper-osca,Cooper-OSCA,British
+167,169,cooper-borgward,Cooper-Borgward,British
+168,170,cooper-climax,Cooper-Climax,British
+169,171,cooper-castellotti,Cooper-Castellotti,British
+170,172,lotus-climax,Lotus-Climax,British
+171,173,lotus-maserati,Lotus-Maserati,British
+172,174,de_tomaso-osca,De Tomaso-Osca,Italian
+173,175,de_tomaso-alfa_romeo,De Tomaso-Alfa Romeo,Italian
+174,176,lotus-brm,Lotus-BRM,British
+175,177,lotus-borgward,Lotus-Borgward,British
+176,178,cooper-alfa_romeo,Cooper-Alfa Romeo,British
+177,179,de_tomaso-ferrari,De Tomaso-Ferrari,Italian
+178,180,lotus-ford,Lotus-Ford,British
+179,181,brabham-brm,Brabham-BRM,British
+180,182,brabham-ford,Brabham-Ford,British
+181,183,brabham-climax,Brabham-Climax,British
+182,184,lds-climax,LDS-Climax,South African
+183,185,lds-alfa_romeo,LDS-Alfa Romeo,South African
+184,186,cooper-ford,Cooper-Ford,British
+185,187,mclaren-ford,McLaren-Ford,British
+186,188,mclaren-seren,McLaren-Serenissima,British
+187,189,eagle-climax,Eagle-Climax,American
+188,190,eagle-weslake,Eagle-Weslake,American
+189,191,brabham-repco,Brabham-Repco,British
+190,192,cooper-ferrari,Cooper-Ferrari,British
+191,193,cooper-ats,Cooper-ATS,British
+192,194,mclaren-brm,McLaren-BRM,British
+193,195,cooper-brm,Cooper-BRM,British
+194,196,matra-ford,Matra-Ford,French
+195,197,brm-ford,BRM-Ford,British
+196,198,mclaren-alfa_romeo,McLaren-Alfa Romeo,British
+197,199,march-alfa_romeo,March-Alfa Romeo,British
+198,200,march-ford,March-Ford,British
+199,201,lotus-pw,Lotus-Pratt &amp; Whitney,British
+200,202,shadow-ford,Shadow-Ford,British
+201,203,shadow-matra,Shadow-Matra,British
+202,204,brabham-alfa_romeo,Brabham-Alfa Romeo,British
+203,205,lotus_racing,Lotus,Malaysian
+204,206,marussia,Marussia,Russian
+205,207,caterham,Caterham,Malaysian
+206,208,lotus_f1,Lotus F1,British
+207,209,manor,Manor Marussia,British
+208,210,haas,Haas F1 Team,American
+209,211,racing_point,Racing Point,British
+210,213,alphatauri,AlphaTauri,Italian
+211,214,alpine,Alpine F1 Team,French
+212,215,rb,RB F1 Team,Italian

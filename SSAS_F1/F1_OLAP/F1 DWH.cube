@@ -1,0 +1,1006 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3510b1f7-d69a-48cd-a51a-17184c24099e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>F1 DWH</ID>
+  <Name>F1 DWH</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension>
+      <ID>Dim Date</ID>
+      <Name>Dim Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute>
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Day</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Decade</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy>
+          <HierarchyID>Thoi gian</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension>
+      <ID>Dim Race</ID>
+      <Name>Dim Race</Name>
+      <DimensionID>Dim Race</DimensionID>
+      <Attributes>
+        <Attribute>
+          <AttributeID>Race Key</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Season</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Round</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy>
+          <HierarchyID>Mua giai - Chang</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension>
+      <ID>Dim Circuit</ID>
+      <Name>Dim Circuit</Name>
+      <DimensionID>Dim Circuit</DimensionID>
+      <Attributes>
+        <Attribute>
+          <AttributeID>Circuit Key</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>City</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Country</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy>
+          <HierarchyID>Dia ly</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension>
+      <ID>Dim Driver</ID>
+      <Name>Dim Driver</Name>
+      <DimensionID>Dim Driver</DimensionID>
+      <Attributes>
+        <Attribute>
+          <AttributeID>Driver Key</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Date Of Birth</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Driver Code</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Nationality</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy>
+          <HierarchyID>Quoc tich - Tay dua</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension>
+      <ID>Dim Constructor</ID>
+      <Name>Dim Constructor</Name>
+      <DimensionID>Dim Constructor</DimensionID>
+      <Attributes>
+        <Attribute>
+          <AttributeID>Constructor Key</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Nationality</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy>
+          <HierarchyID>Quoc tich - Doi dua</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension>
+      <ID>Dim Status</ID>
+      <Name>Dim Status</Name>
+      <DimensionID>Dim Status</DimensionID>
+      <Attributes>
+        <Attribute>
+          <AttributeID>Status Key</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Status Group</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy>
+          <HierarchyID>Nhom - Trang thai</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <CubePermissions />
+  <MdxScripts>
+    <MdxScript>
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+Lệnh CALCULATE điều khiển việc tổng hợp các ô lá của khối – không xoá.
+*/
+CALCULATE;
+CREATE MEMBER CURRENTCUBE.[Measures].[Ti Le Thang]
+ AS IIF([Measures].[So Luot Dua] = 0, NULL, [Measures].[So Lan Thang] / [Measures].[So Luot Dua]),
+FORMAT_STRING = "Percent", VISIBLE = 1, ASSOCIATED_MEASURE_GROUP = 'Ket Qua Dua';
+CREATE MEMBER CURRENTCUBE.[Measures].[Ti Le Hoan Thanh]
+ AS IIF([Measures].[So Luot Dua] = 0, NULL, [Measures].[So Lan Hoan Thanh] / [Measures].[So Luot Dua]),
+FORMAT_STRING = "Percent", VISIBLE = 1, ASSOCIATED_MEASURE_GROUP = 'Ket Qua Dua';
+CREATE MEMBER CURRENTCUBE.[Measures].[Thoi Gian Vong TB Giay]
+ AS IIF([Measures].[So Vong] = 0, NULL, [Measures].[Tong Thoi Gian Vong Ms] / [Measures].[So Vong] / 1000),
+FORMAT_STRING = "#,##0.000", VISIBLE = 1, ASSOCIATED_MEASURE_GROUP = 'Vong Dua';
+CREATE MEMBER CURRENTCUBE.[Measures].[Thoi Gian Pit TB Giay]
+ AS IIF([Measures].[So Lan Vao Pit] = 0, NULL, [Measures].[Tong Thoi Gian Pit Ms] / [Measures].[So Lan Vao Pit] / 1000),
+FORMAT_STRING = "#,##0.00", VISIBLE = 1, ASSOCIATED_MEASURE_GROUP = 'Vao Pit';</Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+  <Source>
+    <DataSourceViewID>F1 DWH</DataSourceViewID>
+  </Source>
+  <StorageMode>Molap</StorageMode>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Ket Qua Dua</ID>
+      <Name>Ket Qua Dua</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure>
+          <ID>So Luot Dua</ID>
+          <Name>So Luot Dua</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source>
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding">
+              <TableID>dbo_FactRaceResult</TableID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>Diem</ID>
+          <Name>Diem</Name>
+          <Source>
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactRaceResult</TableID>
+              <ColumnID>Points</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>So Vong Da Chay</ID>
+          <Name>So Vong Da Chay</Name>
+          <Source>
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactRaceResult</TableID>
+              <ColumnID>LapsCompleted</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>So Lan Thang</ID>
+          <Name>So Lan Thang</Name>
+          <Source>
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactRaceResult</TableID>
+              <ColumnID>IsWin</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>So Lan Len Buc</ID>
+          <Name>So Lan Len Buc</Name>
+          <Source>
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactRaceResult</TableID>
+              <ColumnID>IsPodium</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>So Lan Hoan Thanh</ID>
+          <Name>So Lan Hoan Thanh</Name>
+          <Source>
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactRaceResult</TableID>
+              <ColumnID>IsFinished</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>Vi Tri Xuat Phat Tot Nhat</ID>
+          <Name>Vi Tri Xuat Phat Tot Nhat</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source>
+            <DataType>Integer</DataType>
+            <NullProcessing>Preserve</NullProcessing>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactRaceResult</TableID>
+              <ColumnID>GridPosition</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>Vi Tri Ve Dich Tot Nhat</ID>
+          <Name>Vi Tri Ve Dich Tot Nhat</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source>
+            <DataType>Integer</DataType>
+            <NullProcessing>Preserve</NullProcessing>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactRaceResult</TableID>
+              <ColumnID>FinishPosition</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>Thoi Gian Dua Nhanh Nhat Ms</ID>
+          <Name>Thoi Gian Dua Nhanh Nhat Ms</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source>
+            <DataType>BigInt</DataType>
+            <NullProcessing>Preserve</NullProcessing>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactRaceResult</TableID>
+              <ColumnID>RaceTimeMs</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>Vong Nhanh Nhat Cua Tay Dua Ms</ID>
+          <Name>Vong Nhanh Nhat Cua Tay Dua Ms</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source>
+            <DataType>Integer</DataType>
+            <NullProcessing>Preserve</NullProcessing>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactRaceResult</TableID>
+              <ColumnID>FastestLapTimeMs</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactRaceResult</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Race</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Race Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactRaceResult</TableID>
+                    <ColumnID>RaceKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Circuit</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Circuit Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactRaceResult</TableID>
+                    <ColumnID>CircuitKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Driver</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Driver Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactRaceResult</TableID>
+                    <ColumnID>DriverKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Constructor</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Constructor Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactRaceResult</TableID>
+                    <ColumnID>ConstructorKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Status</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Status Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactRaceResult</TableID>
+                    <ColumnID>StatusKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Phan Hang</ID>
+      <Name>Phan Hang</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure>
+          <ID>So Luot Phan Hang</ID>
+          <Name>So Luot Phan Hang</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source>
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding">
+              <TableID>dbo_FactQualifying</TableID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>Vi Tri Phan Hang Tot Nhat</ID>
+          <Name>Vi Tri Phan Hang Tot Nhat</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source>
+            <DataType>Integer</DataType>
+            <NullProcessing>Preserve</NullProcessing>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactQualifying</TableID>
+              <ColumnID>QualiPosition</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>Q1 Nhanh Nhat Ms</ID>
+          <Name>Q1 Nhanh Nhat Ms</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source>
+            <DataType>Integer</DataType>
+            <NullProcessing>Preserve</NullProcessing>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactQualifying</TableID>
+              <ColumnID>Q1Ms</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>Q2 Nhanh Nhat Ms</ID>
+          <Name>Q2 Nhanh Nhat Ms</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source>
+            <DataType>Integer</DataType>
+            <NullProcessing>Preserve</NullProcessing>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactQualifying</TableID>
+              <ColumnID>Q2Ms</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>Q3 Nhanh Nhat Ms</ID>
+          <Name>Q3 Nhanh Nhat Ms</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source>
+            <DataType>Integer</DataType>
+            <NullProcessing>Preserve</NullProcessing>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactQualifying</TableID>
+              <ColumnID>Q3Ms</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>Thoi Gian Phan Hang Tot Nhat Ms</ID>
+          <Name>Thoi Gian Phan Hang Tot Nhat Ms</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source>
+            <DataType>Integer</DataType>
+            <NullProcessing>Preserve</NullProcessing>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactQualifying</TableID>
+              <ColumnID>BestLapMs</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactQualifying</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Race</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Race Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactQualifying</TableID>
+                    <ColumnID>RaceKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Circuit</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Circuit Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactQualifying</TableID>
+                    <ColumnID>CircuitKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Driver</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Driver Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactQualifying</TableID>
+                    <ColumnID>DriverKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Constructor</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Constructor Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactQualifying</TableID>
+                    <ColumnID>ConstructorKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Vong Dua</ID>
+      <Name>Vong Dua</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure>
+          <ID>So Vong</ID>
+          <Name>So Vong</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source>
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding">
+              <TableID>dbo_FactLapTime</TableID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>Tong Thoi Gian Vong Ms</ID>
+          <Name>Tong Thoi Gian Vong Ms</Name>
+          <Source>
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactLapTime</TableID>
+              <ColumnID>LapTimeMs</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>Vong Nhanh Nhat Ms</ID>
+          <Name>Vong Nhanh Nhat Ms</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source>
+            <DataType>Integer</DataType>
+            <NullProcessing>Preserve</NullProcessing>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactLapTime</TableID>
+              <ColumnID>LapTimeMs</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>Vi Tri Tren Vong Tot Nhat</ID>
+          <Name>Vi Tri Tren Vong Tot Nhat</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source>
+            <DataType>Integer</DataType>
+            <NullProcessing>Preserve</NullProcessing>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactLapTime</TableID>
+              <ColumnID>PositionOnLap</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactLapTime</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Race</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Race Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactLapTime</TableID>
+                    <ColumnID>RaceKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Circuit</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Circuit Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactLapTime</TableID>
+                    <ColumnID>CircuitKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Driver</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Driver Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactLapTime</TableID>
+                    <ColumnID>DriverKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Vao Pit</ID>
+      <Name>Vao Pit</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure>
+          <ID>So Lan Vao Pit</ID>
+          <Name>So Lan Vao Pit</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source>
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding">
+              <TableID>dbo_FactPitStop</TableID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>Tong Thoi Gian Pit Ms</ID>
+          <Name>Tong Thoi Gian Pit Ms</Name>
+          <Source>
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactPitStop</TableID>
+              <ColumnID>DurationMs</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>Lan Pit Nhanh Nhat Ms</ID>
+          <Name>Lan Pit Nhanh Nhat Ms</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source>
+            <DataType>Integer</DataType>
+            <NullProcessing>Preserve</NullProcessing>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactPitStop</TableID>
+              <ColumnID>DurationMs</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>Vong Vao Pit Som Nhat</ID>
+          <Name>Vong Vao Pit Som Nhat</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source>
+            <DataType>Integer</DataType>
+            <NullProcessing>Preserve</NullProcessing>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactPitStop</TableID>
+              <ColumnID>LapNumber</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactPitStop</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Race</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Race Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactPitStop</TableID>
+                    <ColumnID>RaceKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Circuit</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Circuit Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactPitStop</TableID>
+                    <ColumnID>CircuitKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Driver</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Driver Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactPitStop</TableID>
+                    <ColumnID>DriverKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Constructor</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Constructor Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactPitStop</TableID>
+                    <ColumnID>ConstructorKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Bang Xep Hang</ID>
+      <Name>Bang Xep Hang</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure>
+          <ID>So Dong Xep Hang</ID>
+          <Name>So Dong Xep Hang</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source>
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding">
+              <TableID>dbo_FactDriverStanding</TableID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>Hang Cao Nhat</ID>
+          <Name>Hang Cao Nhat</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source>
+            <DataType>Integer</DataType>
+            <NullProcessing>Preserve</NullProcessing>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactDriverStanding</TableID>
+              <ColumnID>StandingPosition</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>Diem Luy Ke</ID>
+          <Name>Diem Luy Ke</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <Source>
+            <DataType>Double</DataType>
+            <NullProcessing>Preserve</NullProcessing>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactDriverStanding</TableID>
+              <ColumnID>TotalPoints</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure>
+          <ID>So Lan Thang Luy Ke</ID>
+          <Name>So Lan Thang Luy Ke</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <Source>
+            <DataType>Integer</DataType>
+            <NullProcessing>Preserve</NullProcessing>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_FactDriverStanding</TableID>
+              <ColumnID>TotalWins</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactDriverStanding</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Race</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Race Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactDriverStanding</TableID>
+                    <ColumnID>RaceKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Dim Driver</CubeDimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Driver Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_FactDriverStanding</TableID>
+                    <ColumnID>DriverKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

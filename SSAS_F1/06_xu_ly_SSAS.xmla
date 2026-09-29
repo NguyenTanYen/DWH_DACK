@@ -1,0 +1,12 @@
+<Batch xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <!-- Xử lý toàn bộ khối F1_OLAP. MaxParallel = 1: đọc lần lượt từng bảng, vì SQL Server Express
+       có ít bộ nhớ, đọc song song 5 bảng sự kiện sẽ báo lỗi "insufficient memory in the buffer pool". -->
+  <Parallel MaxParallel="1">
+    <Process>
+      <Type>ProcessFull</Type>
+      <Object>
+        <DatabaseID>F1_OLAP</DatabaseID>
+      </Object>
+    </Process>
+  </Parallel>
+</Batch>

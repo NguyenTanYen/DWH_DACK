@@ -1,0 +1,48 @@
+﻿/* =====================================================================
+   BƯỚC 7 – TRUY VẤN MDX TRÊN KHỐI DỮ LIỆU F1 DWH (SSAS)
+   Mở SSMS → Connect → Analysis Services → NGUYENTANYEN
+   → chọn cơ sở dữ liệu F1_OLAP → New Query (MDX) → bôi đen từng truy vấn → F5
+   ===================================================================== */
+
+-- M1. CUỘN LÊN: 10 tay đua nhiều chiến thắng nhất mọi thời đại
+SELECT {[Measures].[So Lan Thang], [Measures].[So Lan Len Buc], [Measures].[Diem], [Measures].[Ti Le Thang]} ON COLUMNS,
+       TOPCOUNT([Dim Driver].[Driver Key].[Driver Key].MEMBERS, 10, [Measures].[So Lan Thang]) ON ROWS
+FROM [F1 DWH];
+
+-- M2. KHOAN XUỐNG: tỉ lệ hoàn thành theo thập kỷ, rồi khoan xuống từng năm của thập niên 1980
+SELECT {[Measures].[So Luot Dua], [Measures].[So Lan Hoan Thanh], [Measures].[Ti Le Hoan Thanh]} ON COLUMNS,
+       NON EMPTY [Dim Date].[Thoi gian].[Decade].MEMBERS ON ROWS
+FROM [F1 DWH];
+
+SELECT {[Measures].[So Luot Dua], [Measures].[Ti Le Hoan Thanh]} ON COLUMNS,
+       [Dim Date].[Thoi gian].[Decade].&[1980s].CHILDREN ON ROWS
+FROM [F1 DWH];
+
+-- M3. CẮT LÁT: điểm và số lần thắng của các đội trong mùa giải 2024
+SELECT {[Measures].[Diem], [Measures].[So Lan Thang]} ON COLUMNS,
+       TOPCOUNT([Dim Constructor].[Constructor Key].[Constructor Key].MEMBERS, 5, [Measures].[Diem]) ON ROWS
+FROM [F1 DWH]
+WHERE ([Dim Race].[Season].&[2024]);
+
+-- M4. CẮT KHỐI: mùa 2024, chỉ những lượt đua "Không hoàn thành", theo trạng thái cụ thể
+SELECT {[Measures].[So Luot Dua]} ON COLUMNS,
+       NON EMPTY ORDER([Dim Status].[Status Key].[Status Key].MEMBERS, [Measures].[So Luot Dua], BDESC) ON ROWS
+FROM [F1 DWH]
+WHERE ([Dim Race].[Season].&[2024], [Dim Status].[Status Group].&[Không hoàn thành]);
+
+-- M5. XOAY: số chiến thắng của 5 đội lớn (hàng) theo thập kỷ (cột)
+SELECT NON EMPTY [Dim Date].[Decade].[Decade].MEMBERS ON COLUMNS,
+       FILTER([Dim Constructor].[Constructor Key].[Constructor Key].MEMBERS,
+              [Dim Constructor].[Constructor Key].CURRENTMEMBER.NAME = "Ferrari"
+           OR [Dim Constructor].[Constructor Key].CURRENTMEMBER.NAME = "McLaren"
+           OR [Dim Constructor].[Constructor Key].CURRENTMEMBER.NAME = "Mercedes"
+           OR [Dim Constructor].[Constructor Key].CURRENTMEMBER.NAME = "Red Bull"
+           OR [Dim Constructor].[Constructor Key].CURRENTMEMBER.NAME = "Williams") ON ROWS
+FROM [F1 DWH]
+WHERE ([Measures].[So Lan Thang]);
+
+-- M6. Dùng nhiều nhóm độ đo cùng lúc (nhờ chiều dùng chung): mỗi mùa từ 2011
+--     số lần vào pit, thời gian pit trung bình và vòng đua nhanh nhất
+SELECT {[Measures].[So Lan Vao Pit], [Measures].[Thoi Gian Pit TB Giay], [Measures].[Vong Nhanh Nhat Ms]} ON COLUMNS,
+       NON EMPTY [Dim Race].[Season].&[2011] : [Dim Race].[Season].&[2024] ON ROWS
+FROM [F1 DWH];
